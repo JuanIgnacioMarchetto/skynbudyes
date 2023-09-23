@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desaktadxs</title>
+    <script src="https://kit.fontawesome.com/7665807256.js" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-qKXV1j0HvMUeCBQ+QVp7JcfGl760yU08IQ+GpUo5hlbpg51QRiuqHAJz8+BrxE/N"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../styles/style.css">
+    <style>
+        /* Estilos para el formulario de registro de creadores de contenido */
+        #registro-creador-form {
+            background-color: rgba(255, 255, 255, 0.1);
+            border-radius: 10px;
+            padding: 20px;
+            width: 300px;
+            text-align: center;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+            color: white;
+            margin: 0 auto;
+            margin-top: 20px;
+        }
+
+        #registro-creador-form h2 {
+            font-size: 1.5em;
+        }
+
+        .form-group {
+            margin: 10px 0;
+        }
+
+        .form-group label {
+            color: white;
+            display: block;
+            margin-bottom: 5px;
+            font-size: 1.2em;
+        }
+
+        .form-group input[type="text"],
+        .form-group input[type="email"],
+        .form-group textarea {
+            width: 100%;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            background-color: rgba(255, 255, 255, 0.1);
+            color: white;
+            font-size: 1em;
+        }
+
+        button[type="submit"] {
+            background-color: var(--dark-blue);
+            color: white;
+            border: none;
+            border-radius: 5px;
+            padding: 10px 20px;
+            cursor: pointer;
+            font-size: 1.2em;
+        }
+
+        button[type="submit"]:hover {
+            background-color: var(--light-blue);
+        }
+    </style>
+</head>
+<body>
+    <div id="background">
+        <div id="circle">
+            <div id="circle-glow"></div>
+            <div id="circle-inner"></div>
+        </div>
+    </div>
+
+    <div id="app">
+        <div id="nav">
+            <div id="nav-items">
+                <div class="nav-item">
+                    <a href="../index.html">
+                        <i class="fas fa-home"></i>
+                    </a>
+                </div>
+                <div class="nav-item">
+                    <a href="./contacto.html"><i class="fas fa-comment"></i></a>
+                    
+                </div>
+                <div class="nav-item">
+                    <a href="./registro-creador.html"><i class="fas fa-bolt"></i></a>
+                </div>
+                <div class="nav-item">
+                    <a href="./pages/subscribir.html"> <i class="fas fa-user"></i></a>
+                   
+                </div>
+                <div class="nav-item">
+                    <a href="./pages/explorar-perfiles.html"><i class="fas fa-image"></i></a>
+                    
+                </div>
+                <div class="nav-item">
+                    <i class="fas fa-chart-bar"></i>
+                </div>
+                <div class="nav-item">
+                    <a href="./zorra.html"><i class="fas fa-dice"></i></a>
+                    
+                </div>
+            </div>
+        </div>
+
+        <div id="contact-form">
+            <h2>Contacto con el Creador de Contenido</h2>
+            <form id="formulario-contacto">
+                <!-- Campos de formulario para el contacto -->
+                <div class="form-group">
+                    <label for="nombre">Nombre:</label>
+                    <input type="text" id="nombre" name="nombre" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="correo">Correo Electrónico:</label>
+                    <input type="email" id="correo" name="correo" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="mensaje">Mensaje:</label>
+                    <textarea id="mensaje" name="mensaje" required></textarea>
+                </div>
+                
+                <button type="submit">Enviar Mensaje</button>
+            </form>
+        </div>
+    </div>
+</body>
+<script>
+    // Reducir el zoom al 80%
+    document.body.style.zoom = "80%";
+  
+    // Ajustar el zoom al tamaño de la ventana al cambiar el tamaño
+    function adjustZoom() {
+      const scale = Math.min(window.innerWidth / 1920, window.innerHeight / 1080);
+      document.body.style.zoom = scale * 100 + "%";
+    }
+  
+    // Ajustar el zoom al cargar la página y cuando cambia el tamaño de la ventana
+    window.onload = window.onresize = adjustZoom;
+  </script>
+</html>

@@ -1,0 +1,391 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+
+
+#container{
+    position: absolute;
+    margin:auto;
+    width: 1920px;
+    height :1080px;
+    background-color: gray;
+}
+
+#background{
+    position:absolute;
+    width:1920px;
+    height:1080px;
+    left:100px;
+    right: 100px;
+    background-color:#AEA397;
+    background-image: url("../img/resized_background.png");
+    
+    
+    
+    
+}
+
+#hairback{
+    position:absolute;
+    width:1720px;
+    height:1080px;
+    z-index: 2;
+    
+  
+    
+    
+}
+
+.hairbackdefault{
+    position:absolute;
+    width:1720px;
+    height:1080px;
+    background-image: url();
+    
+}
+.hairback10{
+    position:absolute;
+    width:1720px;
+    height:1080px;
+    background-image: url(https://i.imgur.com/1vxydFp.png);
+    
+    
+}
+#man{
+    position:absolute;
+    width:1720px;
+    height:1080px;
+    z-index: 3;
+    
+    
+    
+    background-image: url(https://i.imgur.com/22lW3wg.png);
+    
+    
+    
+ 
+}
+
+#accessory{
+    position:absolute;
+    width:1720px;
+    height:1080px;
+    z-index: 6;
+    
+    
+    
+}
+
+.accessory{
+    position:absolute;
+    width:1720px;
+    height:1080px;
+    background-image: url(../img/shoe1.png);
+    
+    
+    
+    
+}
+
+.accessory2{
+    position:absolute;
+    width:1720px;
+    height:1080px;
+    background-image: url(../img/shoe2.png);
+    
+}
+
+.accessory3{
+    position:absolute;
+    width:1720px;
+    height:1080px;
+    background-image: url(../img/shoe3.png);
+}
+
+#clothes{
+    
+    position:absolute;
+    width:1720px;
+    height:1080px;
+    z-index: 4;
+    
+    
+    
+}
+
+.dress1{
+    
+    position:absolute;
+    width:1720px;
+    height:1080px;
+    background-image: url(https://i.imgur.com/fQ8Z20a.png);
+}
+
+.dress2{
+    
+    position:absolute;
+    width:1720px;
+    height:1080px;
+    background-image: url(https://i.imgur.com/JJzjBFF.png);
+}
+
+.dress3{
+    
+    position:absolute;
+    width:1720px;
+    height:1080px;
+    background-image: url(https://i.imgur.com/ku83cLx.png);
+}
+.dress4{
+    
+    position:absolute;
+    width:1720px;
+    height:1080px;
+    background-image: url(https://i.imgur.com/TY4IT7b.png);
+}
+.dress5{
+    
+    position:absolute;
+    width:1720px;
+    height:1080px;
+    background-image: url(https://i.imgur.com/2rIIkYp.png);
+}
+.dress6{
+    
+    position:absolute;
+    width:1720px;
+    height:1080px;
+    background-image: url(https://i.imgur.com/fdi7LIt.png);
+}
+.dress7{
+    
+    position:absolute;
+    width:1720px;
+    height:1080px;
+    background-image: url(https://i.imgur.com/5A2ExoX.png);
+}
+.dress8{
+    
+    position:absolute;
+    width:1720px;
+    height:1080px;
+    background-image: url(https://i.imgur.com/6lEMMee.png);
+}
+.dress9{
+    
+    position:absolute;
+    width:1720px;
+    height:1080px;
+    background-image: url();
+}
+.dress10{
+    
+    position:absolute;
+    width:1720px;
+    height:1080px;
+    background-image: url();
+}
+
+.dress11{
+    
+    position:absolute;
+    width:1720px;
+    height:1080px;
+    background-image: url();
+}
+
+#hairfront{
+     position:absolute;
+    width:1720px;
+    height:1080px;
+    z-index: 5;
+    
+    
+    
+    
+}
+
+.hairfront1{
+    
+    position:absolute;
+    width:1720px;
+    height:1080px;
+    background-image: url(https://i.imgur.com/WBTlOCZ.png);
+}
+
+.hairfront2{
+    
+    position:absolute;
+    width:1720px;
+    height:1080px;
+    background-image: url(https://i.imgur.com/3YAHkQq.png);
+}
+
+.hairfront3{
+    
+    position:absolute;
+    width:1720px;
+    height:1080px;
+    background-image: url(https://i.imgur.com/0LvhJz6.png);
+}
+.hairfront4{
+    
+    position:absolute;
+    width:1720px;
+    height:1080px;
+    background-image: url(https://i.imgur.com/G6FIMzN.png);
+}
+
+.hairfront5{
+    
+    position:absolute;
+    width:1720px;
+    height:1080px;
+    background-image: url(https://i.imgur.com/ZQN1vc5.png);
+}
+
+.hairfront6{
+    
+    position:absolute;
+    width:1720px;
+    height:1080px;
+    background-image: url(https://i.imgur.com/TVeZIuW.png);
+}
+.hairfront7{
+    
+    position:absolute;
+    width:1720px;
+    height:1080px;
+    background-image: url(https://i.imgur.com/KtFRbf5.png);
+}
+
+.hairfront8{
+    
+    position:absolute;
+    width:1720px;
+    height:1080px;
+    background-image: url(https://i.imgur.com/18hjOee.png);
+}
+
+.hairfront9{
+    
+    position:absolute;
+    width:1720px;
+    height:1080px;
+    background-image: url(https://i.imgur.com/qyo9ni2.png);
+}
+.hairfront10{
+    
+    position:absolute;
+    width:1720px;
+    height:1080px;
+    background-image: url(https://i.imgur.com/SKLmzqp.png);
+}
+
+.hairfront11{
+    
+    position:absolute;
+    width:1720px;
+    height:1080px;
+    background-image: url(https://i.imgur.com/YUBG4TW.png);
+}
+
+.hairfront12{
+    
+    position:absolute;
+    width:1720px;
+    height:1080px;
+    background-image: url(https://i.imgur.com/1dwN6kw.png);
+}
+
+.hairfront13{
+    
+    position:absolute;
+    width:1720px;
+    height:1080px;
+    background-image: url();
+}
+
+#nexthair{
+    position:absolute;
+    right:10px;
+    top:150px;
+  
+}
+
+#nextdress{
+    position:absolute;
+    right:10px;
+    top:300px;
+}
+
+#nextaccessory{
+    position:absolute;
+    right:10px;
+    top:450px;
+}
+
+#prevhair{
+    position:absolute;
+    left:50px;
+    top:150px;
+}
+
+#prevdress{
+    position:absolute;
+    left:50px;
+    top:400px;
+}
+
+#prevshoe{
+    position:absolute;
+    left:50px;
+    top:750px;
+}
