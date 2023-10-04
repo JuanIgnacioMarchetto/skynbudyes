@@ -104,10 +104,11 @@ a{
 }
 
 #app {
+  position: absolute;
   display: grid;
   height: 100vh;
   place-items: center;
-  position: relative;
+  top: -100px;
   width: 100vw;
   z-index: 2;
 }

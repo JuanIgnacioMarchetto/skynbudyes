@@ -23,7 +23,23 @@
     
     </div>
     
-    <script src="./zorra.js"></script>
+    <script src="./zorra.js">
+        let currentSlide = 0;
+        const slides = document.querySelectorAll('.slider img');
+        const totalSlides = slides.length;
+
+        function nextSlide() {
+            slides[currentSlide].style.display = 'none';
+            currentSlide = (currentSlide + 1) % totalSlides;
+            slides[currentSlide].style.display = 'block';
+        }
+
+        function prevSlide() {
+            slides[currentSlide].style.display = 'none';
+            currentSlide = (currentSlide - 1 + totalSlides) % totalSlides;
+            slides[currentSlide].style.display = 'block';
+        }
+    </script>
     
     </body>
 

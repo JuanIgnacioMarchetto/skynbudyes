@@ -134,17 +134,23 @@
         </div>
     </div>
     <script>
-        // Reducir el zoom al 80%
-        document.body.style.zoom = "80%";
-      
-        // Ajustar el zoom al tamaño de la ventana al cambiar el tamaño
-        function adjustZoom() {
-          const scale = Math.min(window.innerWidth / 1920, window.innerHeight / 1080);
-          document.body.style.zoom = scale * 100 + "%";
+       
+       let currentSlide = 0;
+        const slides = document.querySelectorAll('.slider img');
+        const totalSlides = slides.length;
+
+        function nextSlide() {
+            slides[currentSlide].style.display = 'none';
+            currentSlide = (currentSlide + 1) % totalSlides;
+            slides[currentSlide].style.display = 'block';
         }
-      
-        // Ajustar el zoom al cargar la página y cuando cambia el tamaño de la ventana
-        window.onload = window.onresize = adjustZoom;
+
+        function prevSlide() {
+            slides[currentSlide].style.display = 'none';
+            currentSlide = (currentSlide - 1 + totalSlides) % totalSlides;
+            slides[currentSlide].style.display = 'block';
+        }
+    
       </script>
 </body>
 </html>
