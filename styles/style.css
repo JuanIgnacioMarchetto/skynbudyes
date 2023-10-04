@@ -113,23 +113,40 @@ a{
 }
 
 #nav {
-  align-items: center;
-  display: flex;
-  height: 100%;
-  left: 0px;
-  position: fixed;
-  top: 0px;
-  width: 120px;
+  background-color: #333; /* Color de fondo del menú */
+  padding: 10px; /* Espacio alrededor del menú */
 }
 
 #nav-items {
-  align-items: center;
   display: flex;
-  flex-direction: column;
-  gap: 10px;
-  width: 120px;
+  justify-content: space-between; /* Distribuye los elementos de manera uniforme */
+  align-items: center; /* Centra verticalmente los elementos */
+  max-width: 1200px; /* Ancho máximo del menú */
+  margin: 0 auto; /* Centra el menú horizontalmente */
 }
 
+.nav-item {
+  list-style: none;
+}
+
+.nav-item a {
+  text-decoration: none;
+  color: white; /* Color del texto del enlace */
+  padding: 10px 20px; /* Espacio alrededor de los enlaces */
+}
+
+/* Media query para hacer el menú responsive */
+@media (max-width: 768px) {
+  #nav-items {
+    
+    align-items: flex-start; /
+  }
+
+  .nav-item {
+    margin-bottom: 10px; 
+  }
+}
+En
 #nav-items > .nav-item {
   border-radius: 6px;
   cursor: pointer;
@@ -137,7 +154,7 @@ a{
   height: 100px;
   place-items: center;
   transition: background-color 250ms;
-  width: 100px;
+  width: 50px;
 }
 
 #nav-items > .nav-item:hover {
