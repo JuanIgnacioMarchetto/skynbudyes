@@ -115,12 +115,14 @@ a{
 }
 /* Estilos para el menú de navegación (nav) */
 
+/* Estilos para el menú de navegación (nav) */
+
 #nav {
-  background-color: var(--dark-blue); /* Color de fondo del menú */
-  padding: 10px 0; /* Espaciado en la parte superior e inferior del menú */
-  position: absolute;
+  background-color: var(--dark-blue);
+  padding: 10px 0;
+  position: fixed;
   top: 0;
-  left: -20px;
+  left: 0;
   right: 0;
   z-index: 100;
 }
@@ -129,31 +131,32 @@ a{
   display: flex;
   justify-content: space-between;
   align-items: center;
-  max-width: 1200px;
-  margin: 0 auto;
+  max-width: 100%; /* Cambiamos el ancho máximo a 100% para que sea completamente adaptable */
+  padding: 0 10px; /* Reducimos el espaciado horizontal en pantallas más pequeñas */
 }
 
 .nav-item {
   list-style: none;
-  margin: 0 20px; /* Espaciado horizontal entre elementos del menú */
+  margin: 0 10px; /* Reducimos el espaciado horizontal en pantallas más pequeñas */
 }
 
 .nav-item a {
   text-decoration: none;
   color: white;
+  font-size: 16px; /* Reducimos el tamaño de fuente del texto del menú en pantallas más pequeñas */
 }
 
 /* Cambio de color de fondo al pasar el mouse por encima */
 .nav-item:hover {
-  background-color: var(--light-blue); /* Cambia el color de fondo al pasar el mouse */
+  background-color: var(--light-blue);
   border-radius: 6px;
   transition: background-color 0.3s;
 }
 
 /* Íconos del menú */
 .nav-item i {
- 
-  margin-right: 5px; /* Espacio entre el ícono y el texto */
+  font-size: 20px; /* Reducimos el tamaño de fuente de los íconos en pantallas más pequeñas */
+  margin-right: 5px;
 }
 
 /* Media query para hacer el menú responsive en pantallas más pequeñas */
@@ -163,12 +166,14 @@ a{
   }
 
   .nav-item {
-    margin: 0 10px; /* Reducción del espaciado horizontal en pantallas más pequeñas */
+    margin: 0 5px; /* Reducimos aún más el espaciado horizontal en pantallas más pequeñas */
   }
 
   .nav-item i {
+    font-size: 8px; /* Reducimos aún más el tamaño de fuente de los íconos en pantallas más pequeñas */
   }
 }
+
 
 #profiles {
   display: flex;
